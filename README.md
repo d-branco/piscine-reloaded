@@ -44,3 +44,8 @@ Procura lista e apaga ficheiros terminados com til
 #### grep
 Encontra os enderecos MAC com regex
 `ifconfig | grep -o -E '([A-Z0-9a-z]{2}:){4}[A-Z0-9a-z]{2}'`
+
+## C
+Como incluir funcoes de outros ficheiros?
+1. Incluir o prototipo da funcao;
+2. Incluir o ficheiro ao compilar.
