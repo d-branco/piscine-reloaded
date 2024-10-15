@@ -1,33 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
+/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/15 16:02:01 by abessa-m          #+#    #+#             */
-/*   Updated: 2024/10/15 16:35:29 by abessa-m         ###   ########.fr       */
+/*   Created: 2024/10/15 16:32:42 by abessa-m          #+#    #+#             */
+/*   Updated: 2024/10/15 16:35:24 by abessa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_putchar(char c);
-void	ft_print_alphabet(void);
+void	ft_print_numbers(void);
 
-/*/////////////////////////////////////////////////////////////////////////////
-int	main(void)
+void	ft_print_numbers(void)
 {
-	ft_print_alphabet();
-}
-*//////////////////////////////////////////////////////////////////////////////
-
-void	ft_print_alphabet(void)
-{
-	char	c;
-
-	c = 'a';
-	while (c <= 'z')
-	{
-		ft_putchar(c);
-		c++;
-	}
+	
 }
