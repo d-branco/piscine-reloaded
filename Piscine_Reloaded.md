@@ -25,4 +25,3 @@ Corta um ficheiro para um tamanho 225 bytes
 Altera as permissoes do ficheiro
 `chmod 777 ficheiro.ext`
 `chmod u+w ficheiro.ext`
-
