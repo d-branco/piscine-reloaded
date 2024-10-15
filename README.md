@@ -40,3 +40,7 @@ Procura por ficheiros
 
 Procura lista e apaga ficheiros terminados com til
 `find type f -name "*~" -print -delete`
+
+#### grep
+Encontra os enderecos MAC com regex
+`ifconfig | grep -o -E '([A-Z0-9a-z]{2}:){4}[A-Z0-9a-z]{2}'`
