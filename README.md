@@ -25,3 +25,11 @@ Corta um ficheiro para um tamanho 225 bytes
 Altera as permissoes do ficheiro
 `chmod 777 ficheiro.ext`
 `chmod u+w ficheiro.ext`
+
+#### find
+Procura na pasta actual e subpastas
+`find . qualquer_coisa`
+Procura por ficheiros
+`find -type f -name "nome_do_ficheiro"`
+Procura lista e apaga ficheiros terminados com til
+`find type f -name "*~" -print -delete`
