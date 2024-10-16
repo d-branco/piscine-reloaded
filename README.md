@@ -5,6 +5,7 @@ Muito bem, estou agora a adicionar novas notas ao meu ficheiro de notas markdown
 #### teclado
 Como corrigir o teclado do ubuntu
 `loadkeys pt-latin1`
+
 #### Github markdown
 > [!NOTE]
 > Useful information that users should know, even when skimming content.
