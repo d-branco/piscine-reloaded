@@ -7,7 +7,7 @@ Como corrigir o teclado do ubuntu
 `loadkeys pt-latin1`
 
 #### Github markdown
-> [!NOTE]
+> [!NOTE] Take note
 > Useful information that users should know, even when skimming content.
 
 > [!TIP]
