@@ -6,27 +6,23 @@
 /*   By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 13:23:03 by abessa-m          #+#    #+#             */
-/*   Updated: 2024/10/16 13:36:53 by abessa-m         ###   ########.fr       */
+/*   Updated: 2024/10/17 18:50:40 by abessa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_iterative_factorial(int nb);
 
 /*/////////////////////////////////////////////////////////////////////////////
+#include <stdio.h>
+
 int	main(void)
 {
-	int	i;
-
-	i = 1;
-	if (i)
-	{
-		i = ft_iterative_factorial(-127);
-		i = ft_iterative_factorial(0);
-		i = ft_iterative_factorial(1);
-		i = ft_iterative_factorial(5);
-		i = ft_iterative_factorial(7);
-		i = ft_iterative_factorial(42);
-	}
+		printf("%i\n", ft_iterative_factorial(-1));
+		printf("%i\n", ft_iterative_factorial(0));
+		printf("%i\n", ft_iterative_factorial(1));
+		printf("%i\n", ft_iterative_factorial(12));
+		printf("%i\n", ft_iterative_factorial(13));
+		printf("%i\n", ft_iterative_factorial(42));
 }
 *//////////////////////////////////////////////////////////////////////////////
 
