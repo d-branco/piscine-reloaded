@@ -6,12 +6,12 @@
 /*   By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 18:54:37 by abessa-m          #+#    #+#             */
-/*   Updated: 2024/10/17 19:04:48 by abessa-m         ###   ########.fr       */
+/*   Updated: 2024/10/17 19:14:41 by abessa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_ABS
-# define FT_ABS
+#ifndef FT_ABS_H
+# define FT_ABS_H
 
 #define ABS(Value) (Value * ((Value >= 0) - (Value < 0)))
 
