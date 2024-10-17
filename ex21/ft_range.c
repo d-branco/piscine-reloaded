@@ -6,7 +6,7 @@
 /*   By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 13:35:49 by abessa-m          #+#    #+#             */
-/*   Updated: 2024/10/17 15:42:23 by abessa-m         ###   ########.fr       */
+/*   Updated: 2024/10/17 18:13:18 by abessa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	*ft_range(int min, int max);
 
-//////////////////////////////////////////////////////////////////////////////
+/*/////////////////////////////////////////////////////////////////////////////
 #include <stdio.h>
 
 void	ad_print_array(int size, int *vector);
@@ -22,12 +22,15 @@ void	ad_print_array(int size, int *vector);
 int	main(void)
 {
 	int	*ptr;
-	int test[5] = {10, 20, 30, 40, 50};
+	int	max;
+	int	min;
+	int	len;
 
-	ad_print_array(5, test);
-
-	ptr = ft_range(1, 0);
-	ad_print_array(0, ptr);
+	max = 42;
+	min = 42;
+	len = max - min;
+	ptr = ft_range(min, max);
+	ad_print_array(len, ptr);
 }
 
 void	ad_print_array(int size, int *vector)
@@ -44,20 +47,27 @@ void	ad_print_array(int size, int *vector)
 	}
 	printf("\n");
 }
-//////////////////////////////////////////////////////////////////////////////
+*//////////////////////////////////////////////////////////////////////////////
 
 int	*ft_range(int min, int max)
 {
 	int	*ptr;
+	int	len;
+	int	i;
 
-	if (min > max)
+	if (min >= max)
 	{
 		ptr = (int *) malloc(sizeof(int *));
 		ptr = NULL;
 		return (ptr);
 	}
-
-	ptr = (int *) malloc(sizeof(int *));
-	ptr = NULL;
+	len = max - min;
+	i = 0;
+	ptr = (int *) malloc(sizeof(int *) * len);
+	while (i < len)
+	{
+		ptr[i] = min + i;
+		i++;
+	}
 	return (ptr);
 }
