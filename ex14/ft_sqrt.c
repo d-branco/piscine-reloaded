@@ -1,42 +1,52 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_recursive_factorial.c                           :+:      :+:    :+:   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/16 13:35:48 by abessa-m          #+#    #+#             */
-/*   Updated: 2024/10/17 18:50:43 by abessa-m         ###   ########.fr       */
+/*   Created: 2024/10/16 13:46:14 by abessa-m          #+#    #+#             */
+/*   Updated: 2024/10/18 19:29:12 by abessa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_recursive_factorial(int nb);
+int	ft_sqrt(int nb);
 
 /*/////////////////////////////////////////////////////////////////////////////
-#include <stdio.h>
-
 int	main(void)
 {
-	printf("%i\n", ft_recursive_factorial(-1));
-	printf("%i\n", ft_recursive_factorial(0));
-	printf("%i\n", ft_recursive_factorial(1));
-	printf("%i\n", ft_recursive_factorial(12));
-	printf("%i\n", ft_recursive_factorial(13));
-	printf("%i\n", ft_recursive_factorial(42));
+	int	i;
+
+	i = 1;
+	if (i)
+	{
+		i = ft_sqrt(-127);
+		i = ft_sqrt(0);
+		i = ft_sqrt(1);
+		i = ft_sqrt(2);
+		i = ft_sqrt(4);
+		i = ft_sqrt(42);
+		i = ft_sqrt(225);
+	}
 }
 *//////////////////////////////////////////////////////////////////////////////
 
-int	ft_recursive_factorial(int nb)
+int	ft_sqrt(int nb)
 {
+	int	half;
+	int	j;
+
+	half = nb / 2;
+	j = 1;
 	if (nb < 1)
 		return (0);
 	if (nb == 1)
 		return (1);
-	else
+	while (j <= half)
 	{
-		if (nb >= 2147483648 / (nb - 1))
-			return (0);
-		else
-			return (nb * ft_recursive_factorial(nb - 1));
+		if (j * j == nb)
+			return (j);
+		j++;
 	}
+	return (0);
 }
