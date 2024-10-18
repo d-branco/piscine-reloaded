@@ -6,41 +6,30 @@
 #    By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/17 19:19:45 by abessa-m          #+#    #+#              #
-#    Updated: 2024/10/17 19:19:46 by abessa-m         ###   ########.fr        #
+#    Updated: 2024/10/18 10:20:52 by abessa-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a
-CC = gcc
-CFLAGS = -Wall -Wextra -Werror
-AR = ar rcs
-RM = rm -f
+SRCS =	srcs/ft_putchar.c \
+		srcs/ft_putstr.c \
+		srcs/ft_strcmp.c \
+		srcs/ft_strlen.c \
+		srcs/ft_swap.c
 
-SRCS_DIR = srcs/
-INCS_DIR = includes/
-
-SRCS = $(SRCS_DIR)ft_putchar.c \
-       $(SRCS_DIR)ft_putstr.c \
-       $(SRCS_DIR)ft_strcmp.c \
-       $(SRCS_DIR)ft_strlen.c \
-       $(SRCS_DIR)ft_swap.c
-
-OBJS = $(SRCS:.c=.o)
-
-all: $(NAME)
-
-$(NAME): $(OBJS)
-	$(AR) $@ $^
-
-%.o: %.c
-	$(CC) $(CFLAGS) -I$(INCS_DIR) -c $< -o $@
-
-clean:
-	$(RM) $(OBJS)
-
-fclean: clean
-	$(RM) $(NAME)
-
-re: fclean all
+libft.a: 
+	cc -c $(SRCS) -Iincludes/
+	ar r libft.a ft_putchar.o ft_swap.o ft_putstr.o ft_strlen.o
+#	rm *.o
+# removes the files *.o after the library is ready
 
 .PHONY: all clean fclean re
+
+all: libft.a
+
+clean:
+	rm -f *.o
+
+fclean: clean
+	rm -f libft.a
+
+re: fclean all
