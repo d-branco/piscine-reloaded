@@ -6,7 +6,7 @@
 /*   By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 13:35:48 by abessa-m          #+#    #+#             */
-/*   Updated: 2024/10/18 19:59:47 by abessa-m         ###   ########.fr       */
+/*   Updated: 2024/10/18 20:20:58 by abessa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ int	ft_recursive_factorial(int nb)
 {
 	if (nb == 1 || nb == 0)
 		return (1);
-	if (nb < 1)
+	if (nb < 0)
 		return (0);
 	else
 	{
