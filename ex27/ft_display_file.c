@@ -6,7 +6,7 @@
 /*   By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 11:08:30 by abessa-m          #+#    #+#             */
-/*   Updated: 2024/10/18 20:28:36 by abessa-m         ###   ########.fr       */
+/*   Updated: 2024/10/18 20:44:57 by abessa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,12 @@ int	main(int argc, char **argv)
 	ssize_t	bytes_read;
 	int		read_status;
 
-	if (argc < 2)
-		ft_print_char_pointer("File name missing.\n");
 	if (argc != 2)
 	{
-		ft_print_char_pointer("Too many arguments.\n");
+		if (argc < 2)
+			ft_print_char_pointer("File name missing.\n");
+		else
+			ft_print_char_pointer("Too many arguments.\n");
 		return (2);
 	}
 	read_status = open(argv[1], O_RDONLY);
