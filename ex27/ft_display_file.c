@@ -6,7 +6,7 @@
 /*   By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 11:08:30 by abessa-m          #+#    #+#             */
-/*   Updated: 2024/10/18 16:38:07 by abessa-m         ###   ########.fr       */
+/*   Updated: 2024/10/18 20:28:36 by abessa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,34 +19,28 @@ void	ft_print_char_pointer(char *ptr);
 
 int	main(int argc, char **argv)
 {
+	char	chunk[CHUNK_OF_BYTES_TO_READ];
+	ssize_t	bytes_read;
+	int		read_status;
+
 	if (argc < 2)
-	{
 		ft_print_char_pointer("File name missing.\n");
-		return (1);
-	}
-	if (argc > 2)
+	if (argc != 2)
 	{
 		ft_print_char_pointer("Too many arguments.\n");
 		return (2);
 	}
-	int	read_status = open(argv[1], O_RDONLY);
+	read_status = open(argv[1], O_RDONLY);
 	if (read_status < 0)
 	{
 		ft_print_char_pointer("Error openning the file\n");
 		return (3);
 	}
-
-	char	chunk[CHUNK_OF_BYTES_TO_READ];
-	ssize_t	bytes_read;
-
-	while ((bytes_read = read(read_status, chunk, CHUNK_OF_BYTES_TO_READ)) > 0)
-		write(STDOUT_FILENO, chunk, bytes_read);
-	
-	if (bytes_read == -1)
+	bytes_read = read(read_status, chunk, CHUNK_OF_BYTES_TO_READ);
+	while (bytes_read > 0)
 	{
-		ft_print_char_pointer("Cannot read file.");
-		close(read_status);
-		return (4);
+		write(STDOUT_FILENO, chunk, bytes_read);
+		bytes_read = read(read_status, chunk, CHUNK_OF_BYTES_TO_READ);
 	}
 }
 
