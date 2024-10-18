@@ -6,7 +6,7 @@
 /*   By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 13:46:14 by abessa-m          #+#    #+#             */
-/*   Updated: 2024/10/18 19:29:12 by abessa-m         ###   ########.fr       */
+/*   Updated: 2024/10/18 21:24:44 by abessa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,19 +15,13 @@ int	ft_sqrt(int nb);
 /*/////////////////////////////////////////////////////////////////////////////
 int	main(void)
 {
-	int	i;
-
-	i = 1;
-	if (i)
-	{
-		i = ft_sqrt(-127);
-		i = ft_sqrt(0);
-		i = ft_sqrt(1);
-		i = ft_sqrt(2);
-		i = ft_sqrt(4);
-		i = ft_sqrt(42);
-		i = ft_sqrt(225);
-	}
+	printf("%i\n", ft_sqrt(-127));
+	printf("%i\n", ft_sqrt(0));
+	printf("%i\n", ft_sqrt(1));
+	printf("%i\n", ft_sqrt(2));
+	printf("%i\n", ft_sqrt(4));
+	printf("%i\n", ft_sqrt(42));
+	printf("%i\n", ft_sqrt(132443844));
 }
 *//////////////////////////////////////////////////////////////////////////////
 
@@ -38,7 +32,7 @@ int	ft_sqrt(int nb)
 
 	half = nb / 2;
 	j = 1;
-	if (nb < 1)
+	if (nb < 1 || nb > 46340)
 		return (0);
 	if (nb == 1)
 		return (1);
