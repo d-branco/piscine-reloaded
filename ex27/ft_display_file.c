@@ -6,7 +6,7 @@
 /*   By: abessa-m <abessa-m@student.42porto.com>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 11:08:30 by abessa-m          #+#    #+#             */
-/*   Updated: 2024/10/18 20:44:57 by abessa-m         ###   ########.fr       */
+/*   Updated: 2024/10/18 21:06:32 by abessa-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ int	main(int argc, char **argv)
 	read_status = open(argv[1], O_RDONLY);
 	if (read_status < 0)
 	{
-		ft_print_char_pointer("Error openning the file\n");
+		ft_print_char_pointer("Cannot read file.\n");
 		return (3);
 	}
 	bytes_read = read(read_status, chunk, CHUNK_OF_BYTES_TO_READ);
