@@ -9,42 +9,42 @@ ex00: :white_check_mark: | ex01: :white_check_mark: | ex02: :white_check_mark: |
 ## shell
 #### touch
 Criar um ficheiro
-`touch qualquer_ficheiro.extension`
+<br>`touch qualquer_ficheiro.extension`
 
 Alterar a data de um ficheiro para 1 de Junho aas 20h47
-`touch -t 06012047 ficheiro.ext`
+<br>`touch -t 06012047 ficheiro.ext`
 
 alternativamente, para um link
-`touch -t 06012047 ficheiro.ext -h`
+<br>`touch -t 06012047 ficheiro.ext -h`
 
 #### ln
 Criar um atalho
-`ln -s original_existente atalho_novo`
+<br>`ln -s original_existente atalho_novo`
 
 Cria um ficheiro ligado
-`ln -n ficheiro_origianl novo_ficheiro`
+<br>`ln -n ficheiro_origianl novo_ficheiro`
 
 #### truncate
 Corta um ficheiro para um tamanho 225 bytes
-`truncate fihceiro.ext -s 225`
+<br>`truncate fihceiro.ext -s 225`
 #### chmod
 Altera as permissoes do ficheiro
-`chmod 777 ficheiro.ext`
-`chmod u+w ficheiro.ext`
+<br>`chmod 777 ficheiro.ext`
+<br>`chmod u+w ficheiro.ext`
 
 #### find
 Procura na pasta actual e subpastas
-`find . qualquer_coisa`
+<br>`find . qualquer_coisa`
 
 Procura por ficheiros
-`find -type f -name "nome_do_ficheiro"`
+<br>`find -type f -name "nome_do_ficheiro"`
 
 Procura lista e apaga ficheiros terminados com til
-`find type f -name "*~" -print -delete`
+<br>`find type f -name "*~" -print -delete`
 
 #### grep
 Encontra os enderecos MAC com regex
-`ifconfig | grep -o -E '([A-Z0-9a-z]{2}:){4}[A-Z0-9a-z]{2}'`
+<br>`ifconfig | grep -o -E '([A-Z0-9a-z]{2}:){4}[A-Z0-9a-z]{2}'`
 
 ## C
 Como incluir funcoes de outros ficheiros?
