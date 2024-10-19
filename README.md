@@ -12,14 +12,6 @@ ex00: :white_check_mark: | ex01: :white_check_mark: | ex02: :white_check_mark: |
 #### Recommended reading
 [makefile tutorial](https://makefiletutorial.com/)
 
-#### Didatic example
-```make
-targets: prerequisites
-	command
-	command
-	command
-```
-
 ## C
 How to include function from other files?
 1. Include the function prototype;
@@ -28,39 +20,61 @@ How to include function from other files?
 ## shell
 #### touch
 Create a file
-<br>`touch qualquer_ficheiro.extension`
+```shell
+touch qualquer_ficheiro.extension
+```
 
 Change the date to 1 de June at 20h47
-<br>`touch -t 06012047 ficheiro.ext`
+```shell
+touch -t 06012047 ficheiro.ext
+```
 
 alternative, for a link
-<br>`touch -t 06012047 ficheiro.ext -h`
+```shell
+touch -t 06012047 ficheiro.ext -h
+```
 
 #### ln
 Create a shortcut
-<br>`ln -s original_existente atalho_novo`
+```shell
+ln -s original_existente atalho_novo
+```
 
 Create a linked file
-<br>`ln -n ficheiro_origianl novo_ficheiro`
+```shell
+ln -n ficheiro_origianl novo_ficheiro
+```
 
 #### truncate
 Cut a file up to a size of 225 bytes
-<br>`truncate fihceiro.ext -s 225`
+```shell
+truncate fihceiro.ext -s 225
+```
 
 #### chmod
 Change the permission of a file
-<br>`chmod 777 ficheiro.ext`
-<br>`chmod u+w ficheiro.ext`
+```shell
+chmod 777 ficheiro.ext
+```
+```shell
+chmod u+w ficheiro.ext
+```
 
 #### find
 Search in this folder and in subfolders
-<br>`find . qualquer_coisa`
+```shell
+find . qualquer_coisa
+```
 
 Search for names by file
-<br>`find -type f -name "nome_do_ficheiro"`
+```shell
+find -type f -name "nome_do_ficheiro"
+```
 
 Search, list and, delete files ending in a tilde
-<br>`find type f -name "*~" -print -delete`
+```shell
+find type f -name "*~" -print -delete
+```
 
 #### grep
 Find MAC adresses with regex
