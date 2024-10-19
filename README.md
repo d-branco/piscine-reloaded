@@ -49,6 +49,10 @@ Como incluir funcoes de outros ficheiros?
 2. Incluir o ficheiro ao compilar.
 
 ## Makefile
+#### Recommended reading
+[makefile tutorial](https://makefiletutorial.com/)
+
+#### Didatic examples
 ```make
 targets: prerequisites
 	command
