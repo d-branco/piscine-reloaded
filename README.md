@@ -13,6 +13,7 @@ ex00: :white_check_mark: | ex01: :white_check_mark: | ex02: :white_check_mark: |
 ## Makefile
 #### Recommended reading
 [makefile tutorial](https://makefiletutorial.com/)
+[example file](https://cs.yale.edu/homes/aspnes/classes/223/examples/usingMake/Makefile)
 
 ## C
 How to include function from other files?
