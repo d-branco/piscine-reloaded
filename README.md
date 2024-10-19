@@ -1,10 +1,7 @@
-# Notas acerca da Piscine
-Muito bem, estou agora a adicionar novas notas ao meu ficheiro de notas markdown. Aque ee suposto ter tudo o que haa de aprendizagem da Piscine.
+# Piscine Reloaded
+This is the code from the warm up week that precides the Common Core from the 42 shcool.
 
-## Dicas
-#### teclado
-Como corrigir o teclado do ubuntu
-`loadkeys pt-latin1`
+Bellow there are some notes in various languages.
 
 ## shell
 #### touch
@@ -50,3 +47,11 @@ Encontra os enderecos MAC com regex
 Como incluir funcoes de outros ficheiros?
 1. Incluir o prototipo da funcao;
 2. Incluir o ficheiro ao compilar.
+
+## Makefile
+```make
+targets: prerequisites
+	command
+	command
+	command
+```
