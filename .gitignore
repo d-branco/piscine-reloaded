@@ -6,6 +6,8 @@ ex23/ft_point.c
 ex24/srcs/
 ex24/includes/
 
+.gitignore
+
 # CLion
 /.idea/
 
