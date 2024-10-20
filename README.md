@@ -8,7 +8,7 @@ Bellow there are some notes in various languages.
   <img alt="Shows the number 100." src=2024-10-19_at_15-01-25C-piscine-reloaded.png>
 </picture>
 
-ex00: :white_check_mark: | ex01: :white_check_mark: | ex02: :white_check_mark: | ex03: :white_check_mark: | ex04: :white_check_mark: | <br>ex05: :white_check_mark: | ex06: :white_check_mark: | ex07: :white_check_mark: | ex08: :white_check_mark: | ex09: :white_check_mark: | <br>ex10: :white_check_mark: | ex11: :white_check_mark: | ex12: :white_check_mark: | ex13: :white_check_mark: | ex14: :white_check_mark: | <br>ex15: :white_check_mark: | ex16: :white_check_mark: | ex17: :white_check_mark: | ex18: :white_check_mark: | ex19: :white_check_mark: | <br>ex20: :white_check_mark: | ex21: :white_check_mark: | ex22: :white_check_mark: | ex23: :white_check_mark: | ex24: :white_check_mark: | <br>ex25: :white_check_mark: | ex26: :white_check_mark: | ex27: :white_check_mark:
+ex00: :white_check_mark: | ex01: :white_check_mark: | ex02: :white_check_mark: | ex03: :white_check_mark: | ex04: :white_check_mark: | ex05: :white_check_mark: | ex06: :white_check_mark: | ex07: :white_check_mark: | ex08: :white_check_mark: | ex09: :white_check_mark: | ex10: :white_check_mark: | ex11: :white_check_mark: | ex12: :white_check_mark: | ex13: :white_check_mark: | ex14: :white_check_mark: | ex15: :white_check_mark: | ex16: :white_check_mark: | ex17: :white_check_mark: | ex18: :white_check_mark: | ex19: :white_check_mark: | ex20: :white_check_mark: | ex21: :white_check_mark: | ex22: :white_check_mark: | ex23: :white_check_mark: | ex24: :white_check_mark: | ex25: :white_check_mark: | ex26: :white_check_mark: | ex27: :white_check_mark:
 
 ## Makefile
 #### Recommended reading
